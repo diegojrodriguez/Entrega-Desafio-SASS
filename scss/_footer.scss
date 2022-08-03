@@ -1,0 +1,37 @@
+/**************  PIE DE PAGINA   ****************/
+
+#pieDePagina {
+    display: flex;
+    grid-area: footer;
+    background: linear-gradient(to right, black, $colorSubtitulos);
+
+    /*text-align: center;*/
+    border: 2px black solid;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 70px;
+        padding: 10px;
+
+    }
+
+    .botonInstagram {
+        width: 15%;
+        text-align: left;
+    }
+
+    .botonFacebook {
+        width: 15%;
+        text-align: right;
+    }
+
+    .botonWhatsapp {
+        img {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+    }
+
+}

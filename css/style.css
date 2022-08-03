@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&family=Nunito:wght@300&family=Poppins:wght@100;200&family=Roboto:ital,wght@0,500;1,300&display=swap");
+header {
+  display: flex;
+  grid-area: header;
+  color: #ede6db;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between; }
+  header .imagenLogo {
+    width: 7rem;
+    align-content: stretch;
+    list-style-type: none; }
+  header .fontNav li {
+    display: inline-block;
+    padding: 10px;
+    color: bisque; }
+    header .fontNav li a {
+      background-color: black;
+      justify-content: space-between;
+      text-decoration: none;
+      color: bisque;
+      font-size: 15px; }
+      header .fontNav li a:hover {
+        background-color: #ede6db;
+        font-weight: bold; }
+  header .fontNav .itemSelect,
+  header .fontNav .botonNav {
+    background-color: #ede6db; }
+
+/**************  PIE DE PAGINA   ****************/
+#pieDePagina {
+  display: flex;
+  grid-area: footer;
+  background: linear-gradient(to right, black, bisque);
+  /*text-align: center;*/
+  border: 2px black solid;
+  justify-content: center;
+  align-items: center; }
+  #pieDePagina img {
+    width: 70px;
+    padding: 10px; }
+  #pieDePagina .botonInstagram {
+    width: 15%;
+    text-align: left; }
+  #pieDePagina .botonFacebook {
+    width: 15%;
+    text-align: right; }
+  #pieDePagina .botonWhatsapp img {
+    position: fixed;
+    bottom: 10px;
+    right: 10px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif; }
+
+body {
+  background: linear-gradient(to right, #DFFFC4, bisque); }
+  body h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: black;
+    color: bisque;
+    text-align: center;
+    justify-content: center; }
+  body h3,
+  body h2 {
+    text-align: center;
+    background-color: black;
+    color: bisque; }
+  body p {
+    background-color: bisque;
+    color: black;
+    text-align: justify; }
+
+/************************ IMAGENES **************************/
+.imagenFolleto {
+  width: 100%; }
+  .imagenFolleto:hover {
+    filter: sepia(60%); }
+
+/************   PUBLICIDAD - PROYECTO -PRODUCTOS *************/
+.publicidad {
+  grid-area: publicidad;
+  text-align: center;
+  background-color: black;
+  /* color: bisque;**/
+  padding: 1rem; }
+
+.proyecto {
+  grid-area: proyecto;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  padding: 1rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: linear-gradient(to right, bisque, black); }
+
+.productos {
+  grid-area: productos;
+  text-align: center;
+  background: linear-gradient(to right, bisque, black);
+  padding: 1rem; }
+
+.enlaceExterno {
+  display: flex;
+  padding: 10px;
+  grid-area: enlace;
+  width: 100%;
+  justify-content: space-evenly; }
+
+/********************* VERSION MOBIL *********************/
+@media (min-width: 1024px) {
+  .nosotrosWeb {
+    display: grid;
+    grid-template-areas: "header header header" "imagenp imagenp imagenp" "footer footer footer";
+    gap: 20px; }
+  nav a {
+    text-decoration: none;
+    color: bisque;
+    font-size: 1rem; }
+  .contenedorContacto h1 {
+    font-size: 20px; }
+  .caja {
+    background-color: aquamarine; }
+  .mapa {
+    width: 100%; } }
+
+/*******   NOSOTROS   ********/
+.quienesSomos {
+  grid-area: nosotros; }
+
+/************ GALERIA  ************/
+.contenedor {
+  filter: brightness(70%);
+  justify-items: center;
+  border: 2px bisque solid;
+  border-radius: 6px;
+  padding: 2px; }
+
+/********* CONTACTO ***********/
+.contenedorContacto {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: bisque;
+  border: solid; }
+
+.caja {
+  text-align: center;
+  justify-content: center; }
+
+.boton {
+  background-color: bisque; }
